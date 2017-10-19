@@ -3,7 +3,6 @@ body {
 	margin: 0;
 	background-color: #fff;
 }
-
 .container-fluid {
 	margin-left: 0;
 	margin-right: 0;
@@ -12,10 +11,9 @@ body {
 	vertical-align: middle;
 	position: relative;
 }
-
 .navbar-default {
 	height: auto;
-	background-color: #DC3B16;
+	background-color: rgba(0,0,0,.6);
 	border: none;
 	box-shadow: 0 4px 6px rgba(0,0,0,.176);
 	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.176);
@@ -30,288 +28,284 @@ body {
 	margin: 5px 0 10px 0px;
 	text-align: left;
 }
-
 .nav-pills {
 	float: none;
 	text-align: center;
 	position: relative;
 	padding-right: 0;
 }
-
 .nav-pills > li {
-	font-family: 'Abel', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	list-style: none;
-	width: 19.6%;
+	width: 24.6%;
 }
-
 .nav-pills > li > a {
-	transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
-	margin: 24px 0 10px 0;
-	padding: 0;
-	border-radius: 0;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	margin: 19px 0 10px 0;
+	padding: 5px;
+	border-radius: 3px;
 	font-size: 1.2em;
-	font-weight: 400;
+	font-weight: 300;
 	color: #FFF;
 }
-
 .nav-pills > li > a:hover {
-	transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
-	background-color: #A92D11;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	background-color: #000;
 }
-
 .nav-pills > li > a:focus {
-	background: #FF4419;
+	background: transparent;
 	color: #FFF;
 }
-
-.nav .open > a:focus {
-	background: #EB7E7C;
+.nav-pills > li > a:active {
+	background: transparent;
 }
-
-#network img{
+#network i {
+	font-size: 2em;
+	color: #fff;
 	float: right;
 	width: 30px;
 	margin: 20px 10px 20px 0;
-
+}
+#network i:hover {
+	color: #e43b16;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
 }
 
-/* -- HOME -- */
+@media (min-width: 1400px) {
 
-#home {
-	margin-top: 0px;
-	height: 700px;
-	position: relative;
-	margin-left: -15px;
-	margin-right: -15px;
-	background-image: url(../img/back-1.jpg);
-	background-attachment: fixed;
-	background-position: top center;
-	background-repeat: no-repeat; 
-	background-color: #025050;
-}
+	/* -- HOME -- */
+	#home {
+		margin-top: 0px;
+		height: 900px;
+		margin-left: -15px;
+		margin-right: -15px;
+		background-image: url(../img/back-1.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: top center;
+		background-color: #025050;
+	}
+	#home #intro p {
+		margin-top: 400px;
+		font-size: 5em;
+		text-align: center;
+		letter-spacing: 1.5;
+		border-radius: 3px;
+		font-family: 'Roboto', Sans-serif;
+		font-weight: 300;
+		color: #FFEF9B;
+		background-color: rgba(0,0,0,.6);
+	}
 
-#intro p {
-	margin-top: 180px;
-	font-size: 5em;
-	text-align: center;
-	font-family: 'Abel', Sans-serif;
-	color: #FFF;
-}
+	/* -- WE-ARE -- */
+	#we-are {
+		background-image: url(../img/back-2.jpg);
+		background-position: top center;
+		background-attachment: fixed;
+		background-size: cover;
+		margin-top: 0px;
+		height: 1080px;
+		position: relative;
+		margin-left: -15px;
+		margin-right: -15px;
+		background-repeat: no-repeat;
+		background-color: -webkit-linear-gradient(#e01717, #ffea00);
+	  	background-color: -o-linear-gradient(#e01717, #ffea00);
+	  	background-color: -moz-linear-gradient(#e01717, #ffea00);
+	  	background-color: linear-gradient(#e01717, #ffea00);
+	}
+	#we-are #about {
+		margin-top: 200px;
+		font-family: 'Roboto', Sans-serif;
+		font-weight: 300;
+		font-size: 3em;
+		color: #1a1a1a;
+		text-align: center;
+	}
+	#we-are #icons {
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+	}
+	#we-are #icons .fa {
+		background-color: rgba(0,0,0,.5);
+		width: 160px;
+		height: 160px;
+		border-radius: 100%;
+	}
+	#we-are #icons i {
+		margin-top: 80px;
+		color: #fff;
+		font-size: 6em;
+		padding: 38px 40px;
+		text-align: center;
+	}
+	#we-are #icons p {
+		color: #1a1a1a;
+	}
 
-/* -- WE-ARE -- */
+	/* -- SERVICES -- */
+	#services {
+		background-image: url(../img/back-black.jpg);
+		background-position: top center;
+		background-attachment: fixed;
+		margin-top: 0px;
+		height: 800px;
+		position: relative;
+		margin-left: -15px;
+		margin-right: -15px;
+		background-repeat: no-repeat;
+		background-color: #202020;
+		text-align: center;
+	}
+	#icon-grid {
+		margin-top: 70px;
+	}
+	#services h1 {
+		font-family: 'Roboto', Sans-serif;
+		font-size: 5em;
+		text-align: center;
+		margin-bottom: 50;
+		color: #FFF;
+	}
+	#icons {
+		padding: 0;
+		margin-bottom: 50px;
+	}
+	#icons img {
+		max-width: 100px;
+	}
+	#icons p {
+		margin-top: 30px;
+		font-family: 'Roboto', Sans-serif;
+		font-size: 1.5em;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFF;
+	}
 
-#we-are {
-	background-image: url(../img/back-2.jpg);
-	background-position: bottom center;
-	background-attachment: fixed;
-	margin-top: 0px;
-	height: 1100px;
-	position: relative;
-	margin-left: -15px;
-	margin-right: -15px;
-	background-repeat: no-repeat; 
-	background-color: -webkit-linear-gradient(#e01717, #ffea00);
-  	background-color: -o-linear-gradient(#e01717, #ffea00); 
-  	background-color: -moz-linear-gradient(#e01717, #ffea00);
-  	background-color: linear-gradient(#e01717, #ffea00); 
-}
+	/* -- ARTISTS -- */
+	#artists {
+		background-color: #fff;
+		height: 1200px;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+	#artists-info {
+		margin-top: 100px;
+	}
+	#artists-profile {
+		padding: 50px;
+	}
+	#artists-profile img {
+		border-radius: 3px;
+	}
+	#artists-profile h2 {
+		margin-top: 30px;
+		font-family: 'Roboto', Sans-serif;
+		font-weight: 300;
+		text-align: left;
+		text-transform: uppercase;
+		color: #000;
+	}
+	#artists-profile p {
+		margin-top: 10px;
+		font-family: 'Roboto', Sans-serif;
+		font-weight: 300;
+		font-size: 1.350em;
+		line-height: 1.5;
+		text-align: left;
+		color: #000;
+	}
+	#artists-profile #social .fa {
+		float: left;
+		font-size: 1.8em;
+		text-align: right;
+		color: #000;
+		margin-bottom: 15px;
+		padding: 5px 10px;
+		text-decoration: none;
+	}
+	#artists-profile #social .fa:hover {
+		float: left;
+		font-size: 1.8em;
+		text-align: right;
+		color: #e43b16;
+		margin-bottom: 15px;
+		padding: 5px 10px;
+		text-decoration: none;
+	}
 
-#about {
-	margin-top: 100px;
-	font-family: 'Abel', Sans-serif;
-	font-size: 2em;
-	text-align: center;
-}
-
-#title-lines h1 {
-	font-family: 'Abel', Sans-serif;
-	font-size: 5em;
-	text-align: center;
-	margin-top: 100px;
-}
-
-#we-are h5 {
-	font-family: 'Abel', Sans-serif;
-	font-size: 2em;
-	text-align: left;
-	margin-top: 50px;	
-}
-
-#lines p {
-	font-family: 'Abel', Sans-serif;
-	font-size: 1.1em;
-	text-align: left;
-	margin-top: 10px;	
-}
-
-#we-are hr {
-	margin: 0 0 0 0;
-	border-color: #000;
-}
-
-/* -- SERVICES -- */
-
-#services {
-	background-image: url(../img/back-black.jpg);
-	background-position: top center;
-	background-attachment: fixed;
-	margin-top: 0px;
-	height: 800px;
-	position: relative;
-	margin-left: -15px;
-	margin-right: -15px;
-	background-repeat: no-repeat; 
-	background-color: #202020;
-	text-align: center;
-}
-
-#icon-grid {
-	margin-top: 70px;
-}
-
-#services h1 {
-	font-family: 'Abel', Sans-serif;
-	font-size: 5em;
-	text-align: center;
-	margin-bottom: 50;
-	color: #FFF;
-}
-
-#icons {
-	padding: 0;
-	margin-bottom: 50px; 
-}
-
-#icons img {
-	max-width: 100px;
-}
-
-#icons p {
-	margin-top: 30px;
-	font-family: 'Abel', Sans-serif;
-	font-size: 1.5em;
-	text-align: center;
-	text-transform: uppercase;
-	color: #FFF;
-}
-
-/* -- ARTISTS -- */
-
-#artists {
-	background-color: #fff;
-	margin-top: 0px;
-	height: 900px;
-	position: relative;
-	margin-left: -15px;
-	margin-right: -15px;
-	background-repeat: no-repeat; 
-	text-align: center;
-}
-
-#artists h1 {
-	font-family: 'Abel', Sans-serif;
-	font-size: 5em;
-	text-align: center;
-	margin-top: 90px;
-	margin-bottom: 20;
-	color: #000;
-}
-
-#artists img {
-	max-width: auto;
-	margin-top: 15px;
-}
-
-#artists-profile {
-	border: solid 1px black;
-}
-
-#artists-profile p {
-	max-width: 250px;
-	margin-top: 10px;
-	font-family: 'Abel', Sans-serif;
-	font-size: 1.10pxem;
-	text-align: left;
-	color: #000;
-}
-
-#artists-profile h3 {
-	margin-top: 10px;
-	font-family: 'Abel', Sans-serif;
-	font-size: 1.5em;
-	text-align: left;
-	text-transform: uppercase;
-	color: #000;
-}
-
-#website {
-	float: left;
-	position: relative;
-	text-align: left;
-	font-family: 'Abel', Sans-serif;
-	color: #FFF;
-	margin-bottom: 15px;
-	padding: 5px 10px;
-	border: solid 1px rgba(0,0,0,0);
-	background-color: #DC3B16;
-	text-decoration: none;
-}
-
-/* -- CONTACT -- */
-
-#contact {
-	background-image: url(../img/back-1.jpg);
-	background-position: top center;
-	background-attachment: fixed;
-	background-repeat: no-repeat; 
-	background-color: #000;
-	margin-top: 0px;
-	height: 800px;
-	position: relative;
-	margin-left: -15px;
-	margin-right: -15px;
-	text-align: center;
-}
-
-#outro p {
-	margin-top: 180px;
-	font-size: 3.5em;
-	text-align: center;
-	font-family: 'Abel', Sans-serif;
-	text-transform: uppercase;
-	color: #FFF;
-}
-
-#title-contact h1 {
-	font-family: 'Abel', Sans-serif;
-	font-size: 6em;
-	text-align: center;
-	color: #FFF;
-	margin-top: 30px;
-}
-
-#message img {
-	margin: 20px;
-	width: 100px;
-}
-
-#message a {
-	font-size: 3.5em;
-	text-align: left;
-	font-family: 'Abel', Sans-serif;
-	color: #FFF;
-	text-decoration: none;
-}
-
-#message p {
-	font-size: 3.5em;
-	text-align: left;
-	font-family: 'Abel', Sans-serif;
-	color: #FFF;
+	/* -- CONTACT -- */
+	#contact {
+		background-image: url(../img/back-1.jpg);
+		background-position: top center;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-color: #000;
+		margin-top: 0px;
+		height: 1000px;
+		position: relative;
+		margin-left: -15px;
+		margin-right: -15px;
+		text-align: center;
+	}
+	#text p {
+		margin-top: 300px;
+		font-size: 3.5em;
+		text-align: center;
+		font-weight: 300;
+		font-family: 'Roboto', Sans-serif;
+		text-transform: uppercase;
+		color: #FFF;
+	}
+	#title-contact h1 {
+		font-family: 'Roboto', Sans-serif;
+		font-weight: 300;
+		font-size: 6em;
+		text-align: center;
+		color: #FFF;
+		margin-top: 10px;
+	}
+	#social-network i {
+		width: 120px;
+		height: 120px;
+		padding-top: 33px;
+		margin: 10px;
+		border-radius: 100%;
+		background-color: rgba(0,0,0,.5);
+		font-size: 3.5em;
+		color: #FFF;
+		text-decoration: none;
+	}
+	#social-network i:hover {
+		width: 120px;
+		height: 120px;
+		padding-top: 33px;
+		border-radius: 100%;
+		background-color: rgba(0,0,0,.9);
+		font-size: 3.5em;
+		color: #FFF;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+	}
+	#social-network p {
+		font-size: 3.5em;
+		text-align: left;
+		font-family: 'Roboto', Sans-serif;
+		color: #FFF;
+	}
 }
